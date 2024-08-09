@@ -18,6 +18,9 @@ export default function Home() {
             {i + 1}
           </div>
         ))}
+        <a href="https://github.com/tommyhobbs/view-transitions">
+          View the code
+        </a>
       </main>
     </>
   );
