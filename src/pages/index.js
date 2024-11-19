@@ -26,8 +26,7 @@ export default function Home({ handleSendToBrevo }) {
       }),
     })
       .then((response) => {
-        console.log(response.status);
-        if (response.status !== 200) {
+        if (response.status !== 202) {
           console.error("Network response was not ok " + response.statusText);
         } else {
           console.log("ok");
