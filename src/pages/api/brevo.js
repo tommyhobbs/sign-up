@@ -11,7 +11,7 @@ export default async function handler(req, res) {
         "api-key": process.env.BREVO_API_KEY,
       },
       body: JSON.stringify({
-        listIds: [20], // Change this number to the last number in the url of the list you want (https://app.brevo.com/contact/list/id/20 - The Drop 002 | Pre-sale sign ups #20)
+        listIds: [Number(process.env.BREVO_LIST_ID)],
         jsonBody: [
           {
             email: email,
